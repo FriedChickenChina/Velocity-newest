@@ -27,5 +27,11 @@ subprojects {
                 junitXml.required.set(true)
             }
         }
+
+        jar {
+            manifest {
+                attributes["Main-Class"] = "com.velocitypowered.proxy.Velocity"
+            }
+        }
     }
 }
