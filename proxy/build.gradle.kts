@@ -18,6 +18,7 @@ tasks {
 
     jar {
         manifest {
+            attributes["Main-Class"] = "com.velocitypowered.proxy.Velocity"
             attributes["Implementation-Title"] = "Velocity"
             attributes["Implementation-Vendor"] = "Velocity Contributors"
             attributes["Multi-Release"] = "true"
