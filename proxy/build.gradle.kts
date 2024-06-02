@@ -26,6 +26,9 @@ tasks {
     }
 
     shadowJar {
+        manifest {
+        attributes["Main-Class"] = "com.velocitypowered.proxy.Velocity"
+    }
         transform(Log4j2PluginsCacheFileTransformer::class.java)
 
         // Exclude all the collection types we don"t intend to use
